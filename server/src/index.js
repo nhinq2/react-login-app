@@ -4,7 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.get('/api/github/callback', async (req, res) => {
@@ -34,6 +34,10 @@ app.get('/api/github/callback', async (req, res) => {
         console.error('Error while handling GitHub callback:', error);
         res.status(500).send('An error occurred during the callback process.');
     }
+});
+
+app.get('/', async (req, res) => {
+    res.status(200).send('Server runing');
 });
 
 app.listen(PORT, () => {

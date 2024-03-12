@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "npx nodemon index.js -r dotenv/config",
+    "start": "npx nodemon src/index.js -r dotenv/config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

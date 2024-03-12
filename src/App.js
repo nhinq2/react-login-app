@@ -9,7 +9,7 @@ function App() {
     const code = new URLSearchParams(window.location.search).get('code');
     const handleAuth = async () => {
       // Make a POST request to your server to exchange the code for an access token
-      const response = await fetch(`http://localhost:4000/api/github/callback?code=${code}`, {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/github/callback?code=${code}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
