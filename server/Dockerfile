@@ -15,7 +15,7 @@ RUN npm install \
     && npm run start \
     && rm -fr node_modules
 
-EXPOSE 4000
+EXPOSE 5000
 
 # Start the app using serve command
 CMD [ "node", "server.js" ]
