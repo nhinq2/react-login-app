@@ -31,6 +31,7 @@ Your app is ready to be deployed!
 ### `cd server`
 Start server
 ### `npm install && npm start`
+Open http://localhost:5000 to view it in your browser.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
